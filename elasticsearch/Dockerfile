@@ -1,1 +1,1 @@
-FROM elastcisearch
+FROM docker.elastic.co/elasticsearch/elasticsearch
