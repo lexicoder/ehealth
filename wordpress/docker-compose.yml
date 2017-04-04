@@ -1,0 +1,23 @@
+version: '2'
+
+services:
+
+  wordpress:
+    image: wordpress
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+    networks:
+      - wordpress
+
+  mysql:
+    image: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+    networks:
+      - wordpress
+
+networks:
+  wordpress:
+    driver: bridge
