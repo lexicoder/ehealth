@@ -3,4 +3,5 @@ language: generic
 services:
 - docker
 before_install:
+- cd elk
 - docker-compose build
