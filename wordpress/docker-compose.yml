@@ -10,6 +10,8 @@ services:
       WORDPRESS_DB_PASSWORD: example
     networks:
       - wordpress
+    depends_on:
+      - mysql
 
   mysql:
     image: mariadb
