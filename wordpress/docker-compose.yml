@@ -7,7 +7,7 @@ services:
     ports:
       - 8080:80
     environment:
-      WORDPRESS_DB_PASSWORD: example
+      WORDPRESS_DB_PASSWORD: du+3s9dnU
     networks:
       - wordpress
     depends_on:
@@ -16,7 +16,7 @@ services:
   mysql:
     image: mariadb
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      MYSQL_ROOT_PASSWORD: du+3s9dnU
     networks:
       - wordpress
 
