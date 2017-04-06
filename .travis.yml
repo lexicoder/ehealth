@@ -3,5 +3,7 @@ language: generic
 services:
 - docker
 before_install:
-- cd elk
+- cd $TRAVIS_BUILD_DIR/elk
+- docker-compose build
+- cd $TRAVIS_BUILD_DIR/wordpress
 - docker-compose build

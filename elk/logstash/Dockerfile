@@ -1,1 +1,0 @@
-FROM docker.elastic.co/logstash/logstash:5.2.2
